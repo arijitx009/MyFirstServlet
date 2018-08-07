@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Resume</title>
+</head>
+<body>
+	<h1 align="center">Your Resume</h1>
+	<form align="center" action="ServletResume" method="GET">
+		<div>First Name</div>
+		<div>
+			<input type="text" name="firstname" required />
+		</div>
+		<br>
+		<div>Second Name</div>
+		<div>
+			<input type="text" name="lastname" required />
+		</div>
+<br>
+		<div>Gender</div>
+		<div>
+			<input type="radio" name="gender" value="Male" required />
+			Male&nbsp&nbsp&nbsp&nbsp<input type="radio" name="gender"
+				value="Female">Female
+		</div>
+		<br>
+		<div>
+			<div>Highest Qualification</div>
+			<div>
+				<select name="qualification" required>
+					<option value="Graduate">Graduate</option>
+					<option value="Post-Graduate">PostGraduate</option>
+				</select>
+			</div>
+		</div>
+		<br>
+		<div>
+			<div>Date Of Birth</div>
+			<div>
+				<input type="date" name="date" required/>
+			</div>
+
+		</div>
+		<br>
+		<div>
+			<div>Hobbies</div>
+			<div>
+				<select multiple name="hobbies" required>
+					<option value="Playing Outdoor Games">Playing Outdoor
+						Games</option>
+					<option value="Singing">Singing</option>
+					<option value="Painting">Painiting</option>
+				</select>
+			</div>
+		</div>
+		<br>
+		<div>
+			<div>Address</div>
+			<div>
+				<textarea rows="10" cols="15" name="address"required></textarea>
+			</div>
+		</div>
+		<br>
+		<div>
+			<div>Photo</div>
+			<div>
+				<input type="file" name="photo">
+			</div>
+		</div>
+		<br>
+		<div>
+			<div>Skills</div>
+			<div>
+				<input type="radio" value="C" name="skills">C&nbsp&nbsp&nbsp&nbsp <input
+					type="radio" value="C++" name="skills">C++&nbsp&nbsp&nbsp&nbsp <input
+					type="radio" value="Java" name="skills">Java&nbsp&nbsp&nbsp&nbsp
+			</div>
+		</div>
+		<br>
+		<div>
+			<div>Email ID</div>
+			<div>
+				<input type="email" value="EmaiId" name="email" required>
+			</div>
+		</div>
+		<br>
+		<div>
+			<div>Website</div>
+			<div>
+				<input type="url" value="Website">
+			</div>
+		</div>
+		<br>
+		<div>
+			<div>Contact</div>
+			<div>
+				<input type="text" value="contact" pattern="[9-6][9-0]{9}" name="contact">
+			</div>
+		</div>
+		<br>
+		<div>
+			<div>Description</div>
+			<div>
+				<textarea rows="10" cols="15" name="description"></textarea>
+			</div>
+		</div>
+		<br>
+		<div>
+			<div>Submit</div>
+			<div>
+				<input type="submit" value="Submit">
+			</div>
+		</div>
+		
+	</form>
+
+</body>
+</html>
